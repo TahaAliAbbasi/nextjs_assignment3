@@ -1,101 +1,125 @@
 import Image from "next/image";
+import Link from "next/link";
+import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+    <Navbar />
+    <br />
+    <div id="main" >
+  
+        <div id="fi">
+        <h1 >Basic Information :-</h1>
+        <br />
+        <p>My name is <b>Taha Ali Abbasi</b>.I am a <b>Frontend Web Developer</b>.I have passed <b>Intermediate</b> recently and now i am ready to take admission in <b>BSCS</b>.</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <br /><br /><br /><br />
+        <hr />
+        <div id="se">
+        <h1 >Education :-</h1>
+        <br />
+        <p>I have passed matric from  <b>T.C.F  school</b> in science group.</p>
+        <p>After matric i have done three month's short cources of <b>English language and MS Office</b> from <b>Ebrahim Jamal Institute of IT</b> located at Kharadar, Karachi.</p>
+        <p>I have passed Intermediate in <b>Pre-Medical</b> from <b>Government Degree Boys College, Nishter Road, Karachi</b>.</p>
+        <p>Now i am a student of <b>GIAIC</b> Quarter 2 <b><i> ( It is in progress )</i></b>.</p>
+        </div>
+        <br /><br /><br /><br />
+        <hr />
+        <div id="th">
+          <h1 >Contact Informaion :-</h1>
+          <br />
+          <p>Email : <Link id="a" target="_blanl" href="mailto:tahaaliabbasi333@gmail.com">Click here </Link>to mail me </p>
+          <p>Contact : 03142236170</p>
+          <p>Whatsapp Number : +923142236170</p>
+          <p>Github account : <Link id="a" target="_blank" href="https://github.com/TahaAliAbbasi?tab=repositories">Click here </Link>to access my github repositories</p>
+          <p>Linked in account : <Link id="a" target="_blank" href="https://www.linkedin.com/in/taha-ali-abbasi-17a277290/">Click here </Link>to access my linked in account</p>
+        </div>
+        <br /><br /><br /><br />
+        <hr />
+          <div id="fo">
+          <h1 >Skills :-</h1>
+          <br />
+          <div id="logo">
+            <div>
+            <Image src="/html.png" alt="logo of HTML" width={100} height={100} />
+            <h2>HTML</h2>
+            <p>I have completed HTML course from youtube.</p>
+            </div>
+
+          <div>
+          <Image src="/css.png" alt="logo of CSS" width={100} height={100} />
+          <h2>CSS</h2>
+          <p>I am doing CSS course from youtube. ( in progress )</p>
+          </div>
+
+          <div>
+          <Image src="/js.png" alt="logo of JS" width={100} height={100} />
+          <h2>JavaScript</h2>
+          <p>I have completed JS from GIAIC in first quarter.</p>
+          </div>
+
+          <div>
+          <Image src="/ts.png" alt="logo of TS" width={100} height={100} />
+          <h2>TypeScript</h2>
+          <p>I have completed TS from GIAIC in first quarter.</p>
+          </div>
+
+          <div>
+          <Image src="/next.jpeg" alt="logo of Next.JS" width={100} height={100} />
+          <h2>Next.JS</h2>
+          <p>I am doing Next.JS from GIAIC in second quarter.
+           <br /> ( in progress )</p>
+          </div>
+
+          </div>
+          </div>
+          <br /><br /><br /><br />
+
+          
+        <div id="fif">
+          <h1 >Portfolio/Projects :-</h1>
+          <br />
+          <div id="flex">
+          <div id="cli">
+              <h2>JS/TS cli based projects:</h2>
+              <br />
+              <ol>
+                <li><Link id="a" target="_blanl" href="https://github.com/TahaAliAbbasi/Simple-calculator">cli-simple-calculator</Link></li>
+                <li><Link id="a" target="_blanl" href="https://github.com/TahaAliAbbasi/cli-number-guessing-game">cli-number-guessing-game</Link></li>
+                <li><Link id="a" target="_blanl" href="https://github.com/TahaAliAbbasi/atm">cli-atm</Link></li>
+                <li><Link id="a" target="_blanl" href="https://github.com/TahaAliAbbasi/todo-list">cli-todo-list</Link></li>
+                <li><Link id="a" target="_blanl" href="https://github.com/TahaAliAbbasi/currency-converter">cli-currency-converter</Link></li>
+                <li><Link id="a" target="_blanl" href="https://github.com/TahaAliAbbasi/Word-counter">cli-Word-counter</Link></li>
+                
+              </ol>
+            </div>
+            
+
+            <div id="comb">
+              <h2>HTML,CSS,JS and TS Combine projects "deployed on vercel" :</h2>
+              <br />
+              <ol>
+                <li><Link id="a" target="_blanl" href="https://calculator-by-using-html-css-and-js.vercel.app/">Calculator</Link></li>
+                <li><Link id="a" target="_blanl" href="https://taha-ali-abbasi-resume-bulder-project.vercel.app/">Resume-bulder-form</Link></li>
+              </ol>
+            </div>
+
+            <div id="assig">
+              <h2>Next.js assignments "deployed on vercel" :</h2>
+              <br />
+              <ol>
+                <li><Link id="a" target="_blanl" href="https://nextjs-assignment1-1pbk105uk-taha-ali-abbasis-projects.vercel.app/country">Dynamic routing</Link></li>
+                <li><Link id="a" target="_blanl" href="https://nextjs-assignment2-psi.vercel.app/">Dynamic routing with component and props</Link></li>
+                <li>My resume is also made from Next.js</li>
+              </ol>
+            </div>
+          </div>
+            
+        </div>
+
     </div>
+    </>
+
   );
 }

@@ -3,14 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #b8f3f3;
   --foreground: #171717;
+  --container: #0000ff5e;
+  --container2: #5151ebb7;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: lightblue;
+    --container: #0000ff5e;
+    --container2: #5151ebb7;
   }
 }
 
@@ -19,6 +23,97 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+nav h1{
+  font-size: 3rem;
+  font-weight: bolder;
+  letter-spacing: 4px;
+}
+nav,ul,ul li{
+  background-color: blue;
+  color: white;
+}
+
+nav,nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 0px;
+  }
+
+ul li {
+  display: inline-block;
+  padding: 10px;
+}
+#main{
+  margin: 23px;
+}
+
+#logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+#logo div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color:var(--container);
+  border: 2px solid blue;
+  border-radius: 23px;
+  padding: 25px;
+  margin: 10px;
+  width: 250px;
+  height: 250px;
+}
+
+div ol,div ol li{
+  list-style-type: decimal;
+  background-color:#4550f4 ;
+  list-style-position: inside;
+}
+#a{
+  color: #0000ee;
+  cursor: pointer;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+#assig h2,#comb h2,#cli h2{
+  color: rgb(52, 53, 56);
+}
+#flex {
+  display: flex;
+}
+#assig ,#comb,#cli{
+  background-color: var(--container);
+  border: 2px solid blue;
+  border-radius: 23px;
+  padding: 25px;
+  margin: 10px;
+  width: 370px;
+  height: 250px;
+}
+#assig ol,#comb ol,#cli ol{
+  background-color:#4550f4;
+}
+#fi,#se,#th,#fo,#fif{
+  background-color: var(--container2);
+  border: 2px solid blue;
+  border-radius: 23px;
+  padding: 25px;
+  margin: 10px;
+}
+
 
 @layer utilities {
   .text-balance {
